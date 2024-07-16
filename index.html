@@ -894,15 +894,15 @@ button:hover {
     background-color: #ecf5f5;
     color: #00999c;
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:600px){
     .inner-section{
-        padding: 80px;
+        padding: 0.5rem 0;
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:600px){
     .about{
         background-size: 100%;
-        padding: 100px 40px;
+        padding: 0.5em 0;
     }
     .inner-section{
         width: 100%;
@@ -911,10 +911,10 @@ button:hover {
 
 @media screen and (max-width:600px){
     .about{
-        padding: 0;
+        padding:0.5em 0;
     }
     .inner-section{
-        padding: 60px;
+        padding:0.5em 0;
     }
     .skills button{
         font-size: 19px;
@@ -951,15 +951,13 @@ th{
   background:#ffffff5b;
 }
 td{
-  background:#silver;
+  background:#c0c0c0;
   box-shadow: 0 0 10rem #aef1f5;
 }
 
 
 .pricing-table {
   position: relative;
-  width: 310%;
-  max-width: 1160px;
   display: flex;
   gap: 2rem;
   padding: 6rem;
@@ -1085,12 +1083,13 @@ width:12rem;
 
 }
 
-@media (max-width: 700px) {
-  .pricing-table {
+@media (max-width: 600px) {
+  .pricing-table,tr,td,th {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 4rem;
+    padding:0.5em 0;
   }
 }
  </style>
