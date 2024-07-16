@@ -16,7 +16,8 @@ a:hover{
 }
 header{
     
-    width: 100%;
+    width: 1140px;
+    max-width: 80%;
     margin: auto;
     height: 50px;
     display: flex;
