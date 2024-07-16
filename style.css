@@ -5,22 +5,18 @@ body{
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
-    padding:10px;
-  
-
 
 }
 a{
     text-decoration: none;
     font-size: 16px;
-  
 }
 a:hover{
   color:black;
 }
 header{
-    width: 1140px;
-    max-width: 80%;
+    
+    width: 100%;
     margin: auto;
     height: 50px;
     display: flex;
