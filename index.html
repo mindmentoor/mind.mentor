@@ -620,200 +620,295 @@ button:hover {
 
 
 
-<!--registration form -->
 
-  <div id="r-form" class="form-container">
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <h2>Registration Form</h2>
-      <div class="form-group">
+
+
+    
+<form id="jobApplicationForm" onsubmit="return false;">
+    <fieldset>
+        <legend>Personal Information</legend>
+         <form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="apikey" value="28e7dd05-7897-4e93-9dd8-16148cd63c6e">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
         
-        <label for="Father Name">Father Name</label>
-        <input type="hidden" name="access_key" value="28e7dd05-7897-4e93-9dd8-16148cd63c6e">
-        <input type="text" id="Father Name" name="Father Name" required>
-      </div>
-      <div class="form-group">
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="full-name" required>
-      </div>
-      
-        <div class="form-group">
-          <label for="Nationality">Nationality</label>
-          <input type="text" id="Nationality" name="Nationality" required>
-        </div>
-          <div class="form-group">
-            <label for="Country">Country</label>
-            <input type="text" id="Country" name="Country" required>
-          </div>
-            <div class="form-group">
-              <label for="City">City</label>
-              <input type="text" id="City" name="City" required>
-            </div>
-
-      
-      <div class="form-group">
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob" required>
-      </div>
-      <div class="form-group">
-        <label for="Other certificate">Other certificate</label>
-        <select id="Other certificate" name="Other certificate" required>
-          <option value="">Select Option</option>
-          <option value="Option yes">yes</option>
-          <option value="Option no">no</option>
-          <option value="Option sports">sport(etc)</option>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        
+    </fieldset>
+    
+    <fieldset>
+        <legend>Resume and Cover Letter</legend>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" >
+        
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea id="coverLetter" name="coverLetter" rows="5" ></textarea>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Education</legend>
+        <label for="educationLevel">Highest Level of Education Attained:</label>
+        <select id="educationLevel" name="educationLevel" required>
+            <option value="">Please Select</option>
+            <option value="highSchool">High School Diploma</option>
+            <option value="bachelors">Bachelor's Degree</option>
+            <option value="masters">Master's Degree</option>
+            <option value="phd">PhD</option>
         </select>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-group">
-        <label for="admission">Admission</label>
-        <select id="admission" name="admission" required>
-          <option value="">Select Admission</option>
-          <option value="Undergraduate">Undergraduate</option>
-          <option value="Graduate">Graduate</option>
-          <option value="Master">Master</option>
-          <option value="MPhil">MPhil</option>
-          <option value="PhD">PhD</option>
+        
+        <label for="collageName">Name of Collage/University:</label>
+        <input type="text" id="collageName" name="collageName" required>
+        
+        <label for="major">Major/Area of Study:</label>
+        <input type="text" id="major" name="major" >
+        
+        <label for="graduationYear">Highschool/Graduation Year:</label>
+        <input type="text" id="graduationyear" name="graduationyear" >
+
+    </fieldset>
+    
+    
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="relevantSkills">Relevant Skills:</label>
+        <input type="text" id="relevantSkills" name="relevantSkills" >
+        
+        <label for="certifications">Certifications:</label>
+        <input type="text" id="certifications" name="certifications" >
+    </fieldset>
+    
+     
+     <fieldset>
+       <legend>Additional Questions</legend>
+       <label for="companyInterest">Ask anything</label>
+       <textarea id="companyInterest" name="companyInterest" rows="5" required></textarea>
+     </fieldset>
+    
+    <fieldset>
+        <legend>Which Department Want To Get Adission</legend>
+        
+        <label for="Departments">Write Department Name:</label>
+    <input type="text" id="departmentname" name="departmentname" required>
         </select>
-      </div>
-      <div class="form-group">
-        <label for="degree">Graduation Degree</label>
-        <select id="degree" name="degree" required>
-                 <option value="select">--select--</option>
-<option value="Computer Engineering">Computer Engineering</option>
-                 <option value="Mechanical Engineering">Mechanical Engineering</option>
-                 <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
-                 <option value="Civil Engineering">Civil Engineering</option>
-                 <option value="Architecture">Architecture</option>
-                 <option value="Business Administration">Business Administration</option>
-                 <option value="International Relations">International Relations</option>
-                 <option value="Economics">Economics</option>
-                 <option value="Medicine">Medicine</option>
-                 
-                 
-                 
-                           <option value="theology">theology</option>
-                           <option value="literature">literature</option>
-                           <option value="fine arts">fine arts</option></option>
-
-        </select>
-      </div><div class="form-group">
-              <label for="full-name">Write Graduation </label>
-              <input type="text" id="full-name" name="full-name">
-            </div>
-
-
-      
-      <div class="form-group">
+    </fieldset>
+          <fieldset>
         <label for="passport-validity">Passport Validity</label>
         <select id="passport-validity" name="passport-validity" required>
           <option value="">Select Option</option>
+          
           <option value="Yes">Yes</option>
           <option value="No">No</option>
-        </select>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <style>
 
-
-.form-container {
-  background-color: lightseagreen;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-  animation: fadeIn 1s ease-in-out;
-  margin-left: 35%;
-  margin-bottom:12%; 
-  margin-top: 3%;
-  
+    </fieldset>
+     
+    
+    
+    <input type="submit" value="Submit Application">
+</form>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E6FA; /* Pastel purple background */
+    padding: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-  animation: slideIn 0.5s ease-in-out;
+legend {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: black;
+input[type="submit"] {
+    background-color: #6A5ACD; /* A purple shade for the submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+input[type="submit"]:hover {
+    background-color: #5D3FD3;
 }
 
-button:hover {
-  background-color: #0056b3;
+#viewApplicationsButton {
+    background-color: #6A5ACD; /* Matching the submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
 }
 
-  </style>
+#viewApplicationsButton:hover {
+    background-color: #5D3FD3;
+}
 
+#applicationTable {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    display: none; /* Initially hidden */
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
 
-<!--registration form -->
+th {
+    background-color: #6A5ACD;
+    color: white;
+}</style>
+<script>document.getElementById('jobApplicationForm').addEventListener('submit', handleFormSubmit);
 
+async function handleFormSubmit(event) {
+    event.preventDefault();
 
+    const form = event.target;
+    const isValid = validateForm(form);
 
+    if (!isValid) {
+        console.error("Form is invalid.");
+        // providing feedback to the user if the invalid form
+        return;
+    }
 
+    console.log("Form is valid. Processing data...");
+    const applicationData = extractFormData(form);
+    await saveApplicationData(applicationData);
 
+    form.reset(); // Clear form after successful submission
+    alert("Application submitted successfully!"); // Provide user feedback
+}
 
- 
+// to stimulate the form data validation
+function validateForm(form) {
+        //For demonstration purposes, returns true, this has not been implemented as not required.
+    return true;
+}
+
+// Extracts data from form and returns it as an object
+function extractFormData(form) {
+    const formData = new FormData(form);
+    const application = {};
+    for (const [key, value] of formData.entries()) {
+        application[key] = value;
+    }
+    return application;
+}
+
+//the following has not been implemented as not part of the requirements
+
+// Simulates saving application data, e.g., to server or local storage
+async function saveApplicationData(application) {
+    // asynchronous operation
+    console.log("Storing application data:", application);
+    applications.push(application); // We are sssuming 'applications' is already declared
+    // In a real application we will replace this with an API call to save the data
+}
+
+document.getElementById('viewApplicationsButton').addEventListener('click', displayApplicationsTable);
+
+function displayApplicationsTable() {
+    const tableHtml = generateApplicationsTableHtml(applications);
+    const tableContainer = document.getElementById('applicationTable');
+    tableContainer.innerHTML = tableHtml;
+    tableContainer.style.display = 'block';
+}
+
+// Generates HTML for the applications table
+function generateApplicationsTableHtml(applications) {
+    let tableHtml = `<table>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Resume</th>
+            <th>Cover Letter</th>
+        </tr>`;
+
+    applications.forEach(app => {
+        tableHtml += `<tr>
+            <td>${app.firstName} ${app.lastName}</td>
+            <td>${app.emailAddress}</td>
+            <td>${app.phoneNumber}</td>
+            <td>${app.street}, ${app.city}, ${app.state}, ${app.zipCode}</td>
+            <td>ResumeFile.pdf</td> <!-- Simplified for demonstration -->
+            <td>${app.coverLetter}</td>
+        </tr>`;
+    });
+
+    tableHtml += "</table>";
+    return tableHtml;
+}</script>
+</body>
+</html> 
 
     <footer>
 
