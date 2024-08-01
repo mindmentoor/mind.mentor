@@ -594,14 +594,14 @@ button:hover {
 
 
 
-
-    
 <form id="jobApplicationForm" onsubmit="return false;">
     <fieldset>
+      
         <legend>Personal Information</legend>
-         <form action="https://api.web3forms.com/submit" method="post">
-        <input type="hidden" name="apikey" value="28e7dd05-7897-4e93-9dd8-16148cd63c6e">
         <label for="firstName">First Name:</label>
+        	<form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="apikey" value="28e7dd05-7897-4e93-9dd8-16148cd63c6e">
+    
         <input type="text" id="firstName" name="firstName" required>
         
         <label for="lastName">Last Name:</label>
@@ -687,7 +687,11 @@ button:hover {
     
     <input type="submit" value="Submit Application">
 </form>
-<style>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E6FA; /* Pastel purple background */
+    padding: 20px;
+}
 
 form {
     background-color: #ffffff;
@@ -696,7 +700,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 20px auto;
-	margin-top:2rem:
 }
 
 fieldset {
@@ -787,13 +790,11 @@ th, td {
     text-align: left;
     padding: 8px;
     border-bottom: 1px solid #ddd;
-    text-color:black;
-    color:black;
 }
 
 th {
     background-color: #6A5ACD;
-    color: black;
+    color: white;
 }</style>
 <script>document.getElementById('jobApplicationForm').addEventListener('submit', handleFormSubmit);
 
@@ -878,261 +879,8 @@ function generateApplicationsTableHtml(applications) {
     tableHtml += "</table>";
     return tableHtml;
 }</script>
-
-
-
-<style>
-
-
-
-
-
-  
-  .about{
-    background: url(image/pexels-francesco-ungaro-281260.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
-}
-.inner-section{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 140px;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
-}
-.inner-section h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-    color: black;
-}
-.text{
-    font-size: 13px;
-    color: black;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-.skills button{
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-    width: 200px;
-    background-color: #00999c;
-    color: white;
-    cursor: pointer;
-}
-.skills button:hover{
-    transition: 1s;
-    background-color: #ecf5f5;
-    color: #00999c;
-}
-@media screen and (max-width:600px){
-    .inner-section{
-        padding: 0.5rem 0;
-    }
-}
-@media screen and (max-width:600px){
-    .about{
-        background-size: 100%;
-        padding: 0.5em 0;
-    }
-    .inner-section{
-        width: 100%;
-        padding:0.5rem;
-    }
-}
-
-@media screen (max-width:600px){
-    .about{
-        padding:0.5em 0;
-    }
-    .inner-section{
-        padding:0.5em 0;
-    }
-    .skills button{
-        font-size: 19px;
-        padding: 1.5px;
-        width: 160px;
-        
-    }
-}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-table,td,tr,th{
- 
-
-  padding: 2rem;
-  border: 4px solid #fff;
-  max-width: 1360px;
-
- 
-}
-table{
- border-collapse: collapse;
- 
- width: 100%;
- 
-}
-th{
-  background:#ffffff5b;
-}
-td{
-  background:#silver;
-  box-shadow: 0 0 10rem #aef1f5;
-}
-
-
-.pricing-table {
-  position: relative;
-  display: flex;
-  gap: 2rem;
-  padding: 6rem;
-  border-radius: 1.5rem;
-  border: 5px solid #fff;
-  background: #ffffff5b;
-  
-}
-.price{
-  border: 3px solid white;
-  border-radius: 1.5rem;
-  gap: 1rem;
-  text-align: center;
-  margin: 0px 0px 0px 150px;
-  margin-left: 10%;
-  width:30rem;
-  height:25rem;
-  background: white;
-  color: black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.color {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(5rem);
-}
-
-.purple {
-  background: #edbbff;
-  left: 0;
-  top: 80%;
-  box-shadow: 0 0 10rem #edbbff;
-  
-}
-
-.blue {
-  background: #aef1f5;
-  top: -5rem;
-  left: 30%;
-  box-shadow: 0 0 10rem #aef1f5;
-}
-
-.orange {
-  background: #ffddb7;
-  top: 20%;
-  right: 0;
-  box-shadow: 0 0 10rem #ffddb7;
-}
-
-.get-started {
-  background: #edbbff;  color:black;
-    font-size:6px;
-    margin-top: 8rem;
-    font-weight: 600;
-}
-
-.get-started:hover {
-  box-shadow: 0 0 1rem #e59fff;
-}
-
-.upgrade-now {
-  background: #aef1f5;  color:black;
-    font-size:6px;
-    margin-top: 8rem;font-weight: 600;
-}
-
-.upgrade-now:hover {
-  box-shadow: 0 0 1rem rgb(138, 249, 255);
-}
-
-.try-for-free {
-  background: #ffddb7;
-  color:black;
-  font-size:8px;margin-top: 8rem;font-weight: 600;
-}
-
-.try-for-free:hover {
-  box-shadow: 0 0 1rem #ffc88a;
-
-}
-
-h2 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  
-}
-
-.amount {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.amount span {
-  font-size: 2.2rem;
-}
-
-.amount-info {
-  font-size: 0.9rem;
-}
-
-.description {
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-button {
-  border: 1px solid black;
-  cursor: pointer;
-  transition: 0.5s;
-  width: max-content;
-  border-radius: 0.5rem;
-  padding: 0.9rem;
-  font-size: 0.9rem;
-width:12rem;
-  
-  
-
-}
-
-@media (max-width: 600px) {
-  .pricing-table,tr,td,th {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 4rem;
-    padding:0.5em 0;
-  }
-}
- </style>
+</body>
+</html>
 
 
     <script src="app.js"></script>
